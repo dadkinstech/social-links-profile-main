@@ -1,0 +1,100 @@
+body{
+    background-color: #141414;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    background-color: #1f1f1f;
+    width: 384px;
+    height: 610px;
+    color: white;
+    font-family: "Inter", sans-serif;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+}
+
+#picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#jessica{
+    width: 88px;
+    border-radius: 50%;
+}
+#info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 220px;
+
+}
+
+#name{
+    font-size: 22px;
+}
+
+#location{
+    color: hsl(75, 94%, 57%);
+    font-size: 12px;
+    margin-top: -20px;
+}
+
+#character{
+    font-size: 12px;
+}
+
+#links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 290px;
+    height: 304px;
+}
+
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333333;
+    color: white;
+    width: 290px;
+    height: 44px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+}
+
+.link:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: #1f1f1f;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box; /* Ensures padding and borders are included in width/height */
+}
+
+
+@media only screen and (max-width: 600px) {
+    #container{
+        height: 578px;
+        width: 326px;
+        padding-top: 22px;
+        padding-bottom: 22px;
+
+    }
+    .link{
+        width: 276px;
+    }
+}
